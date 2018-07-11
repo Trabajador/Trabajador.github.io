@@ -34,7 +34,7 @@
     }
     function populateHeader(jsonObj) {
       var myH1 = document.createElement('h1');
-      myH1.textContent = jsonObj['squadName'];
+      myH1.textContent = jsonObj['buildingName'];
       header.appendChild(myH1);
       var myPara = document.createElement('p');
       myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
