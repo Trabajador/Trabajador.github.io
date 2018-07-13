@@ -1,6 +1,6 @@
 {
   "buildingName" : "Renaissance Tower",
-  "homeTown" : "Metro City",
+  "adress" : "1201 Elm Street, Dallas, TX 75251",
   "formed" : 2016,
   "secretBase" : "Super tower",
   "active" : true,
