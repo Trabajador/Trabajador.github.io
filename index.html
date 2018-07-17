@@ -84,7 +84,7 @@ function initMap() {
         myPara1.textContent = 'Property Class: ' + heroes[i].propertyClass[0];
         myPara2.textContent = 'Total Building Area: ' + heroes[i].totalArea;
         myPara3.textContent = 'Property Type: ' + heroes[i].propertyType[0];
-        myPara3.textContent = 'Floors: ' + heroes[i].floors;
+        myPara4.textContent = 'Floors: ' + heroes[i].floors;
         var bldgsType = heroes[i].propertyType; 
           /*for(var j = 0; j < superPowers.length; j++) {
           var listItem = document.createElement('li');
@@ -95,6 +95,7 @@ function initMap() {
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
+        myArticle.appendChild(myPara4);
         myArticle.appendChild(myList);
         section.appendChild(myArticle);
       }
