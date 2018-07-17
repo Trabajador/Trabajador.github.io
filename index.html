@@ -25,6 +25,27 @@
       <section>
 
       </section>
+    <h3></h3>
+    <!--The div element for the map -->
+    <div class="container">
+      <div class="col-md-6" id="map" style="position: relative;overflow: hidden;height: 400px;"></div>
+      <div class="col-md-6"><img src="https://goo.gl/LV5uKi" alt="lorem" style="width:100%; position:relative; overflow:hidden; height:400px;"></div>
+    </div>    
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Adress
+  var Adress = {lat: 32.781433, lng: -96.802352};
+  // The map, centered at Adress
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 13, center: Adress});
+  // The marker, positioned at Adress
+  var marker = new google.maps.Marker({position: Adress, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9MY9vZlHDYreDCz8bmZn0tPIOEV8sy5Q&callback=initMap">
+    </script>
     <script>
     var header = document.querySelector('header');
     var section = document.querySelector('section');
@@ -49,53 +70,33 @@
     function showHeroes(jsonObj) {
       var heroes = jsonObj['bldgs'];
       for(var i = 0; i < heroes.length; i++) {
-        var myArticle = document.createElement('article');
         var myParaProperty = document.createElement('p');
-          myParaProperty.className = "PropertyTitle";
+        myParaProperty.className = "PropertyTitle";
+        var myArticle = document.createElement('article');
         var myH2 = document.createElement('h2');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
+        var myList = document.createElement('ul');
         myParaProperty.textContent = 'Property Details';
         myH2.textContent = heroes[i].name;
         myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
         myPara2.textContent = 'Age: ' + heroes[i].age;
         myPara3.textContent = 'Superpowers:';
-        var superPowers = heroes[i].powers; 
-          for(var j = 0; j < superPowers.length; j++) {
+        var superPowers = heroes[i].powers;
+        for(var j = 0; j < superPowers.length; j++) {
           var listItem = document.createElement('li');
           listItem.textContent = superPowers[j];
           myList.appendChild(listItem);
-        }    
-        myArticle.appendChild(myParaProperty);
+        }
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
+        myArticle.appendChild(myList);
         section.appendChild(myArticle);
       }
     }
-    </script>
-        <h3></h3>
-    <!--The div element for the map -->
-    <div class="container">
-      <div class="col-md-6" id="map" style="position: relative;overflow: hidden;height: 400px;"></div>
-      <div class="col-md-6"><img src="https://goo.gl/LV5uKi" alt="lorem" style="width:100%; position:relative; overflow:hidden; height:400px;"></div>
-    </div>    
-    <script>
-// Initialize and add the map
-function initMap() {
-  // The location of Adress
-  var Adress = {lat: 32.781433, lng: -96.802352};
-  // The map, centered at Adress
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: Adress});
-  // The marker, positioned at Adress
-  var marker = new google.maps.Marker({position: Adress, map: map});
-}
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9MY9vZlHDYreDCz8bmZn0tPIOEV8sy5Q&callback=initMap">
     </script>
   </body>
 </html>
