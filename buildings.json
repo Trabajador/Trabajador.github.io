@@ -7,7 +7,7 @@
       "name" : "Molecule Man",
       "age" : 29,
       "secretIdentity" : "Dan Jukes",
-      "powers" : [
+      "propertyType" : [
         "Commercial",
         "Office"
       ]
