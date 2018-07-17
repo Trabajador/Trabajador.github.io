@@ -70,33 +70,32 @@ function initMap() {
     function showHeroes(jsonObj) {
       var heroes = jsonObj['bldgs'];
       for(var i = 0; i < heroes.length; i++) {
-        var myParaProperty = document.createElement('p');
-        myParaProperty.className = "PropertyTitle";
         var myArticle = document.createElement('article');
         var myH2 = document.createElement('h2');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
         var myPara4 = document.createElement('p');
+        var myPara5 = document.createElement('p');
         var myList = document.createElement('ul');
-        myParaProperty.textContent = 'Property Details';
-        myH2.textContent = heroes[i].tenancy;
+        myH2.textContent = 'Property Details';
         myPara1.textContent = 'Property Class: ' + heroes[i].propertyClass[0];
         myPara2.textContent = 'Total Building Area: ' + heroes[i].totalArea;
         myPara3.textContent = 'Property Type: ' + heroes[i].propertyType[0];
         myPara4.textContent = 'Floors: ' + heroes[i].floors;
+        myPara5.textContent = heroes[i].tenancy;
         var bldgsType = heroes[i].propertyType; 
           /*for(var j = 0; j < superPowers.length; j++) {
           var listItem = document.createElement('li');
           listItem.textContent = superPowers[j];
           myList.appendChild(listItem);
         }*/
-        myArticle.appendChild(myParaProperty);
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myPara4);
+        myArticle.appendChild(myPara5);
         myArticle.appendChild(myList);
         section.appendChild(myArticle);
       }
