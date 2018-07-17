@@ -3,7 +3,7 @@
 	"adress": "1201 Elm Street, Dallas, TX 75251",
 	"active": true,
 	"bldgs": [{
-		"name": "Molecule Man",
+		"tenancy": "Lorem impus",
 		"totalArea": 1700000,
 		"floors": 60,
 		"propertyClass": [
