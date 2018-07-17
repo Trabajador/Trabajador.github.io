@@ -70,8 +70,8 @@ function initMap() {
     function showHeroes(jsonObj) {
       var heroes = jsonObj['bldgs'];
       for(var i = 0; i < heroes.length; i++) {
-        var myArticle1 = document.createElement('article');
-          myArticle1.className = "col-md-3";
+        var myArticle = document.createElement('article');
+          myArticle.className = "col-md-3";
         var myH2 = document.createElement('h2');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
@@ -100,7 +100,8 @@ function initMap() {
         myArticle1.appendChild(myPara4);
         myArticle2.appendChild(myPara5);
         myArticle2.appendChild(myList);
-        section.appendChild(myArticle11, myArticle12);
+        section.appendChild(myArticle);
+        section.appendChild(myArticle2);
       }
     }
     </script>
