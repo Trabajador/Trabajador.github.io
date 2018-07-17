@@ -83,13 +83,20 @@ function initMap() {
         var myArticle2 = document.createElement('article');
           myArticle2.className = "col-md-4";
         var myPara5 = document.createElement('p');
+        var myPara6 = document.createElement('p');
+        var myPara7 = document.createElement('p');
+        var myPara8 = document.createElement('p');
+          myPara8.className = "col-md-4";
         var myList = document.createElement('ul');
         myH2.textContent = 'Property Details';
         myPara1.textContent = 'Property Class: ' + heroes[i].propertyClass[0];
         myPara2.textContent = 'Total Building Area: ' + heroes[i].totalArea;
         myPara3.textContent = 'Property Type: ' + heroes[i].propertyType[0];
         myPara4.textContent = 'Floors: ' + heroes[i].floors;
-        myPara5.textContent = 'Tenancy: ' + heroes[i].tenancy;
+        myPara5.textContent = 'No of Tenant: ' + heroes[i].nTenant;
+        myPara6.textContent = 'Website: ' + heroes[i].site;
+        myPara7.textContent = 'Year Built: ' + heroes[i].yearBuilt;
+        myPara8.textContent = 'Description: ' + heroes[i].descriptionText;
         var bldgsType = heroes[i].propertyType; 
           /*for(var j = 0; j < superPowers.length; j++) {
           var listItem = document.createElement('li');
@@ -102,6 +109,9 @@ function initMap() {
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myPara4);
         myArticle2.appendChild(myPara5);
+        myArticle2.appendChild(myPara6)
+        myArticle2.appendChild(myPara7)
+        myArticle2.appendChild(myPara8)
         myArticle2.appendChild(myList);
         section.appendChild(myDiv);
         myDiv.appendChild(myArticle);
