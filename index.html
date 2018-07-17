@@ -56,7 +56,6 @@
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
-        var myList = document.createElement('ul');
         myParaProperty.textContent = 'Property Details';
         myH2.textContent = heroes[i].name;
         myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
@@ -71,7 +70,6 @@
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
-        myArticle.appendChild(myList);
         section.appendChild(myArticle);
       }
     }
