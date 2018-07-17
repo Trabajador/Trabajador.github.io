@@ -6,12 +6,12 @@
     {
       "name" : "Molecule Man",
       "totalArea" : 1700000,
-      "propertyClass" :  {
-        "A+",
-        "A",
-        "B",
-        "C"
-      }
+      "propertyClass" :  [
+        'A+',
+        'A',
+        'B',
+        'C'
+      ]
       "propertyType" : [
         "Commercial",
         "Office"
