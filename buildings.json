@@ -7,15 +7,9 @@
 		"totalArea": 1700000,
 		"floors": 60,
 		"nTenant": 65,
-		"site": "renaissancetower.net"
+		"site": "renaissancetower.net",
 		"yearBuilt": 1974,
-		"description": "Designed by New York-based architecture firm FXFOWLE 
-		Renaissance Tower is the headquarters for a construction and development company in Instanbul 
-		Turkey’s largest city With sustainability well and truly on the agenda the tower has an ambitious 
-		target of LEED Platinum – the highest rank in the international rating system
-		Rooted in the particular spirit of Istanbul the tower offers an antidote to the universal 
-		application of conventions without regard to locale which has unfortunately become the norm in many 
-		emerging global cities adds Dan Kaplan senior partner at FXFOWLE",
+		"descriptionText": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, ",
 		"propertyClass": [
 			"A+",
 			"A",
