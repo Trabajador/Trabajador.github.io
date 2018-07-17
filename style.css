@@ -5,9 +5,9 @@ html {
 }
 
 body {
-  width: 800px;
+  width: 100%;
   margin: 0 auto;
-  background-image: url(http://russenergo.ru/wp-content/uploads/2015/07/background-site1.jpg);
+  background: url(http://russenergo.ru/wp-content/uploads/2015/07/background-site1.jpg) no-repeat;
 }
 
 h1, h2 {
