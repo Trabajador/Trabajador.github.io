@@ -48,7 +48,7 @@
       header.appendChild(myPara);
     }
     function showHeroes(jsonObj) {
-      var edifices = jsonObj['bldgs'];
+      var heroes = jsonObj['bldgs'];
       for(var i = 0; i < heroes.length; i++) {
         var myArticle = document.createElement('article');
         var myH2 = document.createElement('h2');
@@ -57,10 +57,10 @@
         var myPara3 = document.createElement('p');
         var myList = document.createElement('ul');
         myH2.textContent = heroes[i].name;
-        myPara1.textContent = 'Secret identity: ' + edifices[i].secretIdentity;
-        myPara2.textContent = 'Age: ' + edifices[i].age;
+        myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+        myPara2.textContent = 'Age: ' + heroes[i].age;
         myPara3.textContent = 'Superpowers:';
-        var superPowers = edifices[i].powers;
+        var superPowers = heroes[i].powers;
         for(var j = 0; j < superPowers.length; j++) {
           var listItem = document.createElement('li');
           listItem.textContent = superPowers[j];
@@ -75,7 +75,7 @@
       }
     }
     </script>
-    <h3>Test Map</h3>
+    <h3></h3>
     <!--The div element for the map -->
     <div class="row">
       <div class="col-md-6" id="map" style="position: relative;overflow: hidden;height: 400px;"></div>
