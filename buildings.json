@@ -5,7 +5,7 @@
   "bldgs" : [
     {
       "name" : "Molecule Man",
-      "age" : 29,
+      "totalArea" : 1.700.000,
       "secretIdentity" : "Dan Jukes",
       "propertyType" : [
         "Commercial",
