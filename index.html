@@ -82,13 +82,13 @@ function initMap() {
         myH2.textContent = heroes[i].name;
         myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
         myPara2.textContent = 'Age: ' + heroes[i].age;
-        myPara3.textContent = 'Superpowers:';
+        myPara3.textContent = 'Superpowers:' + heroes[i].powers;[0];
         var superPowers = heroes[i].powers; 
-          for(var j = 0; j < superPowers.length; j++) {
+          /*for(var j = 0; j < superPowers.length; j++) {
           var listItem = document.createElement('li');
-          listItem.textContent = superPowers[0];
+          listItem.textContent = superPowers[j];
           myList.appendChild(listItem);
-        } 
+        }*/ 
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
