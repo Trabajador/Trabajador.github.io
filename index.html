@@ -63,11 +63,11 @@
         myPara2.textContent = 'Age: ' + heroes[i].age;
         myPara3.textContent = 'Superpowers:';
         var superPowers = heroes[i].powers;
-        for(var j = 0; j < superPowers.length; j++) {
+        //for(var j = 0; j < superPowers.length; j++) {
           var listItem = document.createElement('li');
           listItem.textContent = superPowers[1];
           myList.appendChild(listItem);
-        }
+        //}
         myArticle.appendChild(myParaProperty);
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
