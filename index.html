@@ -83,7 +83,7 @@ function initMap() {
         myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
         myPara2.textContent = 'Age: ' + heroes[i].age;
         myPara3.textContent = 'Superpowers:';
-        var superPowers = heroes[i].powers;
+        var superPowers = heroes[i].powers[0];
         for(var j = 0; j < superPowers.length; j++) {
           var listItem = document.createElement('li');
           listItem.textContent = superPowers[j];
