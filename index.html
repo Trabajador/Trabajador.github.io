@@ -85,6 +85,8 @@ function initMap() {
         var myPara5 = document.createElement('p');
         var myPara6 = document.createElement('p');
         var myPara7 = document.createElement('p');
+        var myArticle3 = document.createElement('article');
+          myArticle3.className = "col-md-4";
         var myPara8 = document.createElement('p');
         var myList = document.createElement('ul');
         myH2.textContent = 'Property Details';
@@ -110,11 +112,12 @@ function initMap() {
         myArticle2.appendChild(myPara5);
         myArticle2.appendChild(myPara6)
         myArticle2.appendChild(myPara7)
-        myArticle2.appendChild(myPara8)
-        myArticle2.appendChild(myList);
+        myArticle3.appendChild(myPara8)
+        myArticle3.appendChild(myList);
         section.appendChild(myDiv);
         myDiv.appendChild(myArticle);
         myDiv.appendChild(myArticle2);
+        myDiv.appendChild(myArticle3);
       }
     }
     </script>
