@@ -1,16 +1,19 @@
 {
-  "buildingName" : "Renaissance Tower",
-  "adress" : "1201 Elm Street, Dallas, TX 75251",
-  "active" : true,
-  "bldgs" : [
-    {
-      "name" : "Molecule Man",
-      "totalArea" : 1700000,
-      "propertyClass" : "A+",
-      "propertyType" : [
-        "Commercial",
-        "Office"
-      ]
-    }
-  ]
+	"buildingName": "Renaissance Tower",
+	"adress": "1201 Elm Street, Dallas, TX 75251",
+	"active": true,
+	"bldgs": [{
+		"name": "Molecule Man",
+		"totalArea": 1700000,
+		"propertyClass": [
+			"A+",
+			"A",
+			"B",
+			"C"
+		],
+		"propertyType": [
+			"Commercial",
+			"Office"
+		]
+	}]
 }
