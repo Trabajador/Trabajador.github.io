@@ -25,27 +25,6 @@
       <section>
 
       </section>
-    <h3></h3>
-    <!--The div element for the map -->
-    <div class="container">
-      <div class="col-md-6" id="map" style="position: relative;overflow: hidden;height: 400px;"></div>
-      <div class="col-md-6"><img src="https://goo.gl/LV5uKi" alt="lorem" style="width:100%; position:relative; overflow:hidden; height:400px;"></div>
-    </div>    
-    <script>
-// Initialize and add the map
-function initMap() {
-  // The location of Adress
-  var Adress = {lat: 32.781433, lng: -96.802352};
-  // The map, centered at Adress
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: Adress});
-  // The marker, positioned at Adress
-  var marker = new google.maps.Marker({position: Adress, map: map});
-}
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9MY9vZlHDYreDCz8bmZn0tPIOEV8sy5Q&callback=initMap">
-    </script>
     <script>
     var header = document.querySelector('header');
     var section = document.querySelector('section');
@@ -94,6 +73,27 @@ function initMap() {
         section.appendChild(myArticle);
       }
     }
+    </script>
+        <h3></h3>
+    <!--The div element for the map -->
+    <div class="container">
+      <div class="col-md-6" id="map" style="position: relative;overflow: hidden;height: 400px;"></div>
+      <div class="col-md-6"><img src="https://goo.gl/LV5uKi" alt="lorem" style="width:100%; position:relative; overflow:hidden; height:400px;"></div>
+    </div>    
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Adress
+  var Adress = {lat: 32.781433, lng: -96.802352};
+  // The map, centered at Adress
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 13, center: Adress});
+  // The marker, positioned at Adress
+  var marker = new google.maps.Marker({position: Adress, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9MY9vZlHDYreDCz8bmZn0tPIOEV8sy5Q&callback=initMap">
     </script>
   </body>
 </html>
