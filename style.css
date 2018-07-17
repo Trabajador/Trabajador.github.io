@@ -8,6 +8,7 @@ body {
   width: 100%;
   margin: 0 auto;
   background: url(http://russenergo.ru/wp-content/uploads/2015/07/background-site1.jpg) no-repeat;
+  background-size: 100%;
 }
 
 h1, h2 {
