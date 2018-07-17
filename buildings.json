@@ -6,7 +6,12 @@
     {
       "name" : "Molecule Man",
       "totalArea" : 1700000,
-      "secretIdentity" : "Dan Jukes",
+      "propertyClass" :  [
+        "A+",
+        "A",
+        "B",
+        "C"
+      ]
       "propertyType" : [
         "Commercial",
         "Office"
