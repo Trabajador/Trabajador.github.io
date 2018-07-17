@@ -5,6 +5,7 @@
 	"bldgs": [{
 		"name": "Molecule Man",
 		"totalArea": 1700000,
+		"floors": 60,
 		"propertyClass": [
 			"A+",
 			"A",
