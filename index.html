@@ -77,12 +77,14 @@ function initMap() {
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
+        var myPara4 = document.createElement('p');
         var myList = document.createElement('ul');
         myParaProperty.textContent = 'Property Details';
         myH2.textContent = heroes[i].name;
         myPara1.textContent = 'Property Class: ' + heroes[i].propertyClass[0];
         myPara2.textContent = 'Total Building Area: ' + heroes[i].totalArea;
         myPara3.textContent = 'Property Type: ' + heroes[i].propertyType[0];
+        myPara3.textContent = 'Floors: ' + heroes[i].floors;
         var bldgsType = heroes[i].propertyType; 
           /*for(var j = 0; j < superPowers.length; j++) {
           var listItem = document.createElement('li');
