@@ -2,7 +2,7 @@
   "buildingName" : "Renaissance Tower",
   "adress" : "1201 Elm Street, Dallas, TX 75251",
   "active" : true,
-  "members" : [
+  "bldgs" : [
     {
       "name" : "Molecule Man",
       "age" : 29,
