@@ -56,9 +56,9 @@ function initMap() {
     request.responseType = 'json';
     request.send();
     request.onload = function() {
-      var superHeroes = request.response;
-      populateHeader(superHeroes);
-      showHeroes(superHeroes);
+      var superBuildings = request.response;
+      populateHeader(superBuildings);
+      showBuildings(superBuildings);
     }
     function populateHeader(jsonObj) {
       var myH1 = document.createElement('h1');
@@ -68,9 +68,9 @@ function initMap() {
       myPara.textContent = jsonObj['adress'];
       header.appendChild(myPara);
     }
-    function showHeroes(jsonObj) {
-      var heroes = jsonObj['bldgs'];
-      for(var i = 0; i < heroes.length; i++) {
+    function showBuildings(jsonObj) {
+      var buildings = jsonObj['bldgs'];
+      for(var i = 0; i < buildings.length; i++) {
         var myDiv = document.createElement('div');
           myDiv.className = "row justify-content-center";
         var myArticle = document.createElement('article');
@@ -90,15 +90,15 @@ function initMap() {
         var myPara8 = document.createElement('p');
         var myList = document.createElement('ul');
         myH2.textContent = 'Property Details';
-        myPara1.textContent = 'Property Class: ' + heroes[i].propertyClass[0];
-        myPara2.textContent = 'Total Building Area: ' + heroes[i].totalArea;
-        myPara3.textContent = 'Property Type: ' + heroes[i].propertyType[0];
-        myPara4.textContent = 'Floors: ' + heroes[i].floors;
-        myPara5.textContent = 'No of Tenant: ' + heroes[i].nTenant;
-        myPara6.textContent = 'Website: ' + heroes[i].site;
-        myPara7.textContent = 'Year Built: ' + heroes[i].yearBuilt;
-        myPara8.textContent = 'Description: ' + heroes[i].descriptionText;
-        var bldgsType = heroes[i].propertyType; 
+        myPara1.textContent = 'Property Class: ' + buildings[i].propertyClass[0];
+        myPara2.textContent = 'Total Building Area: ' + buildings[i].totalArea;
+        myPara3.textContent = 'Property Type: ' + buildings[i].propertyType[0];
+        myPara4.textContent = 'Floors: ' + buildings[i].floors;
+        myPara5.textContent = 'No of Tenant: ' + buildings[i].nTenant;
+        myPara6.textContent = 'Website: ' + buildings[i].site;
+        myPara7.textContent = 'Year Built: ' + buildings[i].yearBuilt;
+        myPara8.textContent = 'Description: ' + buildings[i].descriptionText;
+        var bldgsType = buildings[i].propertyType; 
           /*for(var j = 0; j < superPowers.length; j++) {
           var listItem = document.createElement('li');
           listItem.textContent = superPowers[j];
