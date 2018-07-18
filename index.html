@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
@@ -30,6 +31,13 @@
     <div class="container">
       <div class="col-md-6" id="map" style="position: relative;overflow: hidden;height: 400px;"></div>
       <div class="col-md-6"><img src="https://goo.gl/LV5uKi" alt="lorem" style="width:100%; position:relative; overflow:hidden; height:400px;"></div>
+        <table class="table" id="table">
+          <tr>
+            <th>Unit Name/Number</th>
+            <th>Record Type</th>
+            <th>Available Area</th>
+          </tr>
+        </table>
     </div>    
     <script>
 // Initialize and add the map
