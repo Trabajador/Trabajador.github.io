@@ -20,20 +20,18 @@
 			"Commercial",
 			"Office"
 		],
-		"availability": [{
-			"nameNumber": [
-				"Renaissance Tower 1/F-, 1-999",
-				"Renaissance Tower 2/F-, 1-999",
-				"Renaissance Tower 3/F-, 1-999",
-				"Renaissance Tower 4/F-, 1-999"
-			],
-			"recordType": [
-				"Vacant",
-				"Future",
-				"Available",
-				"Unavailable"
-			],
-			"availableArea": [2666700]
-		}]
+		"nameNumber": [
+			"Renaissance Tower 1/F-, 1-999",
+			"Renaissance Tower 2/F-, 1-999",
+			"Renaissance Tower 3/F-, 1-999",
+			"Renaissance Tower 4/F-, 1-999"
+		],
+		"recordType": [
+			"Vacant",
+			"Future",
+			"Available",
+			"Unavailable"
+		],
+		"availableArea": [2666700]
 	}]
 }
