@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ascendix Test Work</title>
+    <title>My CV</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -31,154 +31,9 @@
     <div class="container">
       <div class="col-md-6" id="map" style="position: relative;overflow: hidden;height: 400px;"></div>
       <div class="col-md-6"><img src="https://github.com/Trabajador/Trabajador.github.io/blob/master/background-site1.jpg" alt="lorem" style="width:100%; position:relative; overflow:hidden; height:400px;"></div>
-        <table class="table" id="table">
-          <caption style="font-size: 20px;">Availabilities</caption>
-          <tr>
-            <th>Unit Name/Number</th>
-            <th>Record Type</th>
-            <th>Available Area</th>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
           <footer>
       
           </footer>
     </div>
-
-    <script>
-// Initialize and add the map
-function initMap() {
-  // The location of Adress
-  var Adress = {lat: 32.781433, lng: -96.802352};
-  // The map, centered at Adress
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: Adress});
-  // The marker, positioned at Adress
-  var marker = new google.maps.Marker({position: Adress, map: map});
-}
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9MY9vZlHDYreDCz8bmZn0tPIOEV8sy5Q&callback=initMap">
-    </script>
-    <script>
-    var header = document.querySelector('header');
-    var section = document.querySelector('section');
-    var footer = document.querySelector('footer');
-    var obj1 = document.getElementsByTagName('td')[0];
-    var obj2 = document.getElementsByTagName('td')[3];
-    var obj3 = document.getElementsByTagName('td')[6];
-    var obj4 = document.getElementsByTagName('td')[9];
-    var obj5 = document.getElementsByTagName('td')[1];
-    var obj6 = document.getElementsByTagName('td')[4];
-    var obj7 = document.getElementsByTagName('td')[7];
-    var obj8 = document.getElementsByTagName('td')[10];
-    var obj9 = document.getElementsByTagName('td')[2];
-    var obj10 = document.getElementsByTagName('td')[5];
-    var obj11 = document.getElementsByTagName('td')[8];
-    var obj12 = document.getElementsByTagName('td')[11];
-      section.className = "container";
-    var requestURL = 'https://Trabajador.github.io/buildings.json';
-    var request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'json';
-    request.send();
-    request.onload = function() {
-      var superBuildings = request.response;
-      populateHeader(superBuildings);
-      showBuildings(superBuildings);
-    }
-    function populateHeader(jsonObj) {
-      var myH1 = document.createElement('h1');
-      myH1.textContent = jsonObj['buildingName'];
-      header.appendChild(myH1);
-      var myPara = document.createElement('p');
-      myPara.textContent = jsonObj['adress'];
-      header.appendChild(myPara);
-    }
-    function showBuildings(jsonObj) {
-      var buildings = jsonObj['bldgs'];
-      for(var i = 0; i < buildings.length; i++) {
-        var myDiv = document.createElement('div');
-          myDiv.className = "row justify-content-center";
-        var myArticle = document.createElement('article');
-          myArticle.className = "col-md-4";
-        var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
-        var myPara2 = document.createElement('p');
-        var myPara3 = document.createElement('p');
-        var myPara4 = document.createElement('p');
-        var myArticle2 = document.createElement('article');
-          myArticle2.className = "col-md-4";
-        var myPara5 = document.createElement('p');
-        var myPara6 = document.createElement('p');
-        var myPara7 = document.createElement('p');
-        var myArticle3 = document.createElement('article');
-          myArticle3.className = "col-md-4";
-        var myPara8 = document.createElement('p');
-        var myList = document.createElement('ul');
-        var bldgsType = buildings[i].propertyType;
-        myH2.textContent = 'Property Details';
-        myPara1.textContent = 'Property Class: ' + buildings[i].propertyClass[0];
-        myPara2.textContent = 'Total Building Area: ' + buildings[i].totalArea;
-        myPara3.textContent = 'Property Type: ' + buildings[i].propertyType[0];
-        myPara4.textContent = 'Floors: ' + buildings[i].floors;
-        myPara5.textContent = 'No of Tenant: ' + buildings[i].nTenant;
-        myPara6.textContent = 'Website: ' + buildings[i].site;
-        myPara7.textContent = 'Year Built: ' + buildings[i].yearBuilt;
-        myPara8.textContent = 'DESCRIPTION: ' + buildings[i].descriptionText;
-        obj1.textContent = buildings[i].nameNumber[0]; 
-        obj2.textContent = buildings[i].nameNumber[1];
-        obj3.textContent = buildings[i].nameNumber[2];
-        obj4.textContent = buildings[i].nameNumber[3];
-        obj5.textContent = buildings[i].recordType[0];
-        obj6.textContent = buildings[i].recordType[1];
-        obj7.textContent = buildings[i].recordType[2];
-        obj8.textContent = buildings[i].recordType[3];
-        obj9.textContent = buildings[i].availableArea + ' sf';
-        obj10.textContent = buildings[i].availableArea + ' sf';
-        obj11.textContent = buildings[i].availableArea + ' sf';
-        obj12.textContent = buildings[i].availableArea + ' sf';
-          /*for(var j = 0; j < superBuildings.length; j++) {
-          var listItem = document.createElement('li');
-          listItem.textContent = superPowers[j];
-          myList.appendChild(listItem);
-        }*/
-        header.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
-        myArticle.appendChild(myPara4);
-        myArticle2.appendChild(myPara5);
-        myArticle2.appendChild(myPara6)
-        myArticle2.appendChild(myPara7)
-        myArticle3.appendChild(myPara8)
-        myArticle3.appendChild(myList);
-        section.appendChild(myDiv);
-        myDiv.appendChild(myArticle);
-        myDiv.appendChild(myArticle2);
-        myDiv.appendChild(myArticle3);
-      }
-    }
-
-    </script>
   </body>
 </html>
