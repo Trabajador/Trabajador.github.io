@@ -190,4 +190,8 @@ html.transition * {
   h2 {
     width: 50%;
   }
+  .show-photo-img__wrapper {
+    right: 0;
+    top: 185px;
+  }
 }
