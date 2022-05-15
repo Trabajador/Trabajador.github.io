@@ -185,3 +185,9 @@ html.transition * {
 .show-photo__label {
   cursor: pointer;
 }
+
+@media screen and (max-width: 400px) {
+  h2 {
+    width: 50%;
+  }
+}
