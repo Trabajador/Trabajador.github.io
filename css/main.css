@@ -91,6 +91,7 @@ section {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  min-width: 86px;
 }
 .theme-switch-wrapper em {
   margin-left: 10px;
