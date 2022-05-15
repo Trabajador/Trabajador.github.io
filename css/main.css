@@ -186,6 +186,14 @@ html.transition * {
   cursor: pointer;
 }
 
+/* .show-photo__label::after {
+  content: '';
+  background-image: url(/img/down-arrow.svg);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+} */
+
 @media screen and (max-width: 420px) {
   h2 {
     width: 50%;
