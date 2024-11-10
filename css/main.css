@@ -185,7 +185,7 @@ html.transition * {
 .show-photo-img__wrapper.active{
   visibility: visible;
   opacity: 1;
-  transform: translateY(66px);
+  transform: translateY(70px);
 }
 
 .show-photo-img__wrapper img {
@@ -201,7 +201,7 @@ html.transition * {
   border-radius: 34px;
   border: unset;
   cursor: pointer;
-  padding-block: 8px;
+  padding-block: 9px;
   width: 88px;
 }
 
