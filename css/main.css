@@ -200,6 +200,7 @@ html.transition * {
   background-color: #ccc;
   border-radius: 34px;
   border: unset;
+  color: #202020;
   cursor: pointer;
   padding-block: 9px;
   width: 88px;
@@ -208,14 +209,6 @@ html.transition * {
 html[data-theme=dark] button,
 html[data-theme=dark] .show-photo__btn {
   background-color: var(--primary-color);
-  color: #ffffff;
-}
-
-.show-photo__label {
-  color: #202020;
-}
-
-html[data-theme=dark] .show-photo__label {
   color: #ffffff;
 }
 
