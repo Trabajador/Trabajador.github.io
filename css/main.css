@@ -57,7 +57,7 @@ section {
 }
 
 .cv {
-  max-width: 900px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -83,7 +83,7 @@ section {
 }
 
 .experience__date {
-  min-width: 185px;
+  flex: 0 0 185px;
   margin-bottom: 1em;
 }
 

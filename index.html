@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Mike Gurba CV</title>
+    <meta name="description" content="Mike Gurba - Frontend Developer with over 7 years of experience in Web Development, CMS Development, and IT">
+    <meta property="og:title" content="Mike Gurba - Frontend Developer">
+    <meta property="og:description" content="Frontend Developer with over 7 years of experience specializing in Web Development">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/YOUR-KIT-CODE.js" crossorigin="anonymous"></script>
+    <title>Mike Gurba | Frontend Developer</title>
 </head>
 <body>
     <div class="cv">
@@ -16,12 +23,12 @@
           <div class="theme-switch-wrapper">
             <label class="theme-switch">
               <span class="theme-switch__label screen-reader-text">Dark Mode</span>
-              <input type="checkbox" class="theme-switch__checkbox"/>
+              <input type="checkbox" class="theme-switch__checkbox" aria-label="Toggle dark mode"/>
               <div class="slider round"></div>
             </label>
           </div>
           <div class="show-photo-wrapper">
-            <button class="show-photo__btn">
+            <button class="show-photo__btn" aria-label="Toggle profile photo">
               Show Photo
             </button>
             <div class="show-photo-img__wrapper">
@@ -30,197 +37,198 @@
           </div>
         </div>
       </header>
-      <section>
-        <h2>Front-end dev, markup, CMS dev, IT Specialist</h2>
-        <div class="contacts">
-          <div class="contact">
-            <div class="contact__type">
-                <i class="fa fa-briefcase fa-fw" aria-hidden="true"></i>
-            </div>
-            <div class="contact__value">
-                <a href="/portfolio/" target="_blank">Portfolio</a>
-            </div>
-        </div>
-          <div class="contact">
+      <main>
+        <section>
+          <h2>Front-end dev, markup, CMS dev, IT Specialist</h2>
+          <div class="contacts">
+            <div class="contact">
               <div class="contact__type">
-                  <i class="fa fa-github fa-fw" aria-hidden="true"></i>
+                  <i class="fa fa-briefcase fa-fw" aria-hidden="true"></i>
               </div>
               <div class="contact__value">
-                  <a href="https://github.com/Trabajador" target="_blank">Github.com/Trabajador</a>
-              </div>
-          </div>
-          <div class="contact">
-            <div class="contact__type">
-                <i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
-            </div>
-            <div class="contact__value">
-                <a href="https://www.linkedin.com/in/mike-gurba-694006111/" target="_blank">Linkedin Profile</a>
-            </div>
-        </div>
-          <div class="contact">
-              <div class="contact__type">
-                  <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
-              </div>
-              <div class="contact__value">
-                  <a href="mailto:mihailgurba@gmail.com" target="_blank">Mihailgurba@gmail.com</a>
-              </div>
-          </div>
-          <div class="contact">
-              <div class="contact__type">
-                  <i class="fa fa-telegram fa-fw" aria-hidden="true"></i>
-              </div>
-              <div class="contact__value">
-                  <a href="https://telegram.me/Nostrick" target="_blank">@Nostrick</a>
+                  <a href="/portfolio/" target="_blank" rel="noopener" aria-label="View Portfolio">Portfolio</a>
               </div>
           </div>
             <div class="contact">
                 <div class="contact__type">
-                    <i class="fa fa-skype fa-fw" aria-hidden="true"></i>
+                    <i class="fa fa-github fa-fw" aria-hidden="true"></i>
                 </div>
                 <div class="contact__value">
-                    <a href="skype:Trabajadors?chat">Trabajadors</a>
+                    <a href="https://github.com/Trabajador" target="_blank" rel="noopener" aria-label="Visit GitHub Profile">Github.com/Trabajador</a>
+                </div>
+            </div>
+            <div class="contact">
+              <div class="contact__type">
+                  <i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
+              </div>
+              <div class="contact__value">
+                  <a href="https://www.linkedin.com/in/mike-gurba-694006111/" target="_blank" rel="noopener" aria-label="Visit LinkedIn Profile">Linkedin Profile</a>
+              </div>
+          </div>
+            <div class="contact">
+                <div class="contact__type">
+                    <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
+                </div>
+                <div class="contact__value">
+                    <a href="mailto:mihailgurba@gmail.com" target="_blank" aria-label="Send email">Mihailgurba@gmail.com</a>
                 </div>
             </div>
             <div class="contact">
                 <div class="contact__type">
-                    <i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>
+                    <i class="fa fa-telegram fa-fw" aria-hidden="true"></i>
                 </div>
                 <div class="contact__value">
-                    <a href="tel:+380999845399" target="_blank">+380999845399</a>
+                    <a href="https://telegram.me/Nostrick" target="_blank" rel="noopener" aria-label="Contact on Telegram">@Nostrick</a>
                 </div>
             </div>
-        </div>
-        <div class="description">
-          IT Specialist with over 7 years of specializing in <b>Web development</b>
-          I can create effective web applications with high support level.
-          My greatest strength is business awareness, which anable me to permanently streamline infrastructure and applications
-        </div>
-      </section>
+              <div class="contact">
+                  <div class="contact__type">
+                      <i class="fa fa-skype fa-fw" aria-hidden="true"></i>
+                  </div>
+                  <div class="contact__value">
+                      <a href="skype:Trabajadors?chat" aria-label="Contact on Skype">Trabajadors</a>
+                  </div>
+              </div>
+              <div class="contact">
+                  <div class="contact__type">
+                      <i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>
+                  </div>
+                  <div class="contact__value">
+                      <a href="tel:+380999845399" target="_blank" aria-label="Call phone number">+380999845399</a>
+                  </div>
+              </div>
+          </div>
+          <div class="description">
+            Frontend developer with over 7 years of experience specializing <b>Web development</b>
+            I can create effective web applications with high support level.
+            <br>
+            My greatest strength is business awareness, which enables me to permanently streamline infrastructure and applications
+          </div>
+        </section>
 
-      <section>
-        <h3>Experience</h3>
-        <div class="experience">
-          <div class="experience__date">07.2022 - 12.2024</div>
-          <div class="experience__description">
-              <div class="experience__name">Front-end developer</div>
-              <div class="experience__company">Mabbly</div>
-              <div class="experience__details">
-                  <ul>
-                      <li>Create custom themes for WP, Shopify</li>
-                      <li>WCAG, Accessability optimization</li>
-                      <li>Support projects</li>
+        <section>
+          <h3>Experience</h3>
+          <div class="experience">
+            <div class="experience__date">07.2022 - 12.2024</div>
+            <div class="experience__description">
+                <div class="experience__name">Front-end developer</div>
+                <div class="experience__company">Mabbly</div>
+                <div class="experience__details">
+                    <ul>
+                        <li><b>Description:</b> As part of the Digital marketing and branding agency, we aim to elevate companies to grows</li>
+                        <li><b>Technologies:</b> Vue, JS, Twig/Liquid, SCSS</li>
+                        <li>
+                          <b>Achievements and responsibilities:</b>
+                          <ul>
+                            <li>Developed custom, responsive websites tailored to client branding and business goals.</li>
+                            <li>Collaborated with designers and backend developers to deliver seamless, interactive user experiences.</li>
+                            <li>Reduced websites load times minimum by 30% through performance enhancements.</li>
+                            <li>Built reusable components, cutting development time by 20%.</li>
+                            <li>Delivered high-profile client projects ahead of schedule, exceeding expectations</li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="experience">
+              <div class="experience__date">08.2020 - 03.2022</div>
+              <div class="experience__description">
+                  <div class="experience__name">Full Stack Developer</div>
+                  <div class="experience__company">Web Studio DL</div>
+                  <div class="experience__details">
+                    <ul>
+                      <li><b>Description:</b> A web development studio specializing in creating and growing online stores</li>
+                      <li><b>Technologies:</b> JS, PHP, HTML5, CSS</li>
+                      <li>
+                        <b>Achievements and responsibilities:</b>
+                        <ul>
+                          <li>Developed and maintained custom e-commerce websites using OpenCart, Webasyst (Shop-Script), and other technologies.</li>
+                          <li>Integrated third-party APIs, payment gateways, and other e-commerce tools to enhance store functionality.</li>
+                          <li>Successfully integrated updated to e-commerce platforms, resulting in a 25% increase in customer engagement.</li>
+                          <li>Optimized website performance, reducing page load times by 30% and improving SEO rankings.</li>
+                          <li>Integrated advanced payment and logistics systems, increasing sales conversion rates by 15%.</li>
+                        </ul>
+                      </li>
                   </ul>
+                  </div>
               </div>
           </div>
-      </div>
-        <div class="experience">
-            <div class="experience__date">08.2021 - 03.2022</div>
-            <div class="experience__description">
-                <div class="experience__name">Front-end, CMS, Markup developer</div>
-                <div class="experience__company">Web Studio DL</div>
-                <div class="experience__details">
-                    <ul>
-                        <li>Create online stores, landings using HTML5, CSS3 pure JS/jQuery</li>
-                        <li>implementation desing to CMS</li>
-                        <li>Support online stores</li>
-                        <li>Support corporative site</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="experience">
-            <div class="experience__date">04.2020 - 08.2021</div>
-            <div class="experience__description">
-                <div class="experience__name">Front-end Markup developer</div>
-                <div class="experience__company">Freelance</div>
-                <div class="experience__details">
-                    <ul>
-                        <li>Create front end using HTML5, CSS3 pure JS/jQuery</li>
-                        <li>Page layouting using Figma, Photoshop</li>
-                        <li>Support online store</li>
-                        <li>Support various applications</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="experience">
-            <div class="experience__date">12.2019 - 04.2020</div>
+          <div class="experience">
+            <div class="experience__date">12.2019 - 08.2020</div>
             <div class="experience__description">
                 <div class="experience__name">IT Specialist</div>
                 <div class="experience__company">Frunze Group</div>
                 <div class="experience__details">
-                    <ul>
-                        <li>Create sites using Webasyst</li>
-                        <li>Technical audit of sites</li>
-                        <li>Work with Google: pagespeed insights, analytics, webmaster, adSense, tag manager</li>
-                        <li>Tasks estimation</li>
-                        <li>Redesign, change of site interface</li>
-                    </ul>
+                  <ul>
+                    <li><b>Description:</b> Network of official car dealerships based in representing several automotive brands: Nissan, Kia,
+                      Ford, Hyundai, Chevrolet. | A manufacturing enterprise with a history dating back to 1885.</li>
+                    <li><b>Technologies:</b> JS, HTML5, CSS3, Google tools</li>
+                    <li>
+                      <b>Achievements and responsibilities:</b>
+                      <ul>
+                        <li>Developed and preserved websites using Webasyst, ensuring functionality and responsiveness.</li>
+                        <li>Improved website performance, increasing PageSpeed scores by up to 30%.</li>
+                        <li>Enhanced site interfaces through successful redesigns, boosting user engagement by 20%.</li>
+                        <li>Delivered projects on time by accurately estimating tasks and managing workloads.</li>
+                        <li>Increased website traffic and revenue through better integration of Google tools.</li>
+                      </ul>
+                    </li>
+                </ul>
                 </div>
             </div>
-        </div>
-        <div class="experience">
-            <div class="experience__date">06.2019 - 12.2019</div>
-            <div class="experience__description">
-                <div class="experience__name">Markup developer</div>
-                <div class="experience__company">Freelance</div>
-                <div class="experience__details">
-                    <ul>
-                        <li>Create sites using Wordpress</li>
-                        <li>Page layouting using Photoshop</li>
-                        <li>Create html emails</li>
-                        <li>Adapt the site for different sizes of devices and screens</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="experience">
-            <div class="experience__date">05.2017 - 04.2019</div>
+          </div>
+          <div class="experience">
+            <div class="experience__date">02.2016 - 12.2019</div>
             <div class="experience__description">
                 <div class="experience__name">IT Specialist</div>
                 <div class="experience__company">Auto Trend/Lux logistic</div>
                 <div class="experience__details">
-                    <ul>
-                        <li>Create sites using Bitrix, ModX</li>
-                        <li>Make content for blogs</li>
-                        <li>Create online calculators</li>
-                        <li>Integration 1c-Bitrix</li>
-                        <li>Support various applications</li>
-                        <li>Staff training on the website interface</li>
-                    </ul>
+                  <ul>
+                    <li><b>Description:</b> One of the biggest B2B multibrend auto parts supplier in Ukraine</li>
+                    <li><b>Technologies:</b> JS, PHP, HTML5, CSS3</li>
+                    <li>
+                      <b>Achievements and responsibilities:</b>
+                      <ul>
+                        <li>Built and upheld websites using Bitrix and ModX CMS platforms, including integration and customization.</li>
+                        <li>Integrated and supported 1C-Bitrix systems, including CMS integration and markup adjustments.</li>
+                        <li>Created HTML email templates with a reach of over 10,000 customers</li>
+                        <li>Delivered seamless 1C-Bitrix integrations for clients, improving operational workflows.</li>
+                      </ul>
+                    </li>
+                </ul>
                 </div>
             </div>
-        </div>
-        <div class="experience">
-            <div class="experience__date">02.2016 - 04.2017</div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Skills</h3>
+          <div>
+              Vite, Gulp, Webpack, Vue, Angular, React, HTML5, CSS3, JavaScript, Git, Bootstrap, jQuery, Bitrix, ModX, Wordpress, WebAsyst, Shopscript, Figma, Sketch, SQL, PHP, Smarty, Hugo.
+          </div>
+        </section>
+
+        <section>
+          <h3>Education</h3>
+          <div class="experience">
+            <div class="experience__date">09.2013 - 05.2017</div>
             <div class="experience__description">
-                <div class="experience__name">Web developer</div>
-                <div class="experience__company">Freelance</div>
-                <div class="experience__details">
-                    <ul>
-                        <li>Setting up AWS for work</li>
-                        <li>Integration markup to CMS</li>
-                        <li>Create html emails</li>
-                        <li>Support various applications</li>
-                    </ul>
-                </div>
+                <div class="experience__name">IT Specialist | Bachelor of computer engineering</div>
+                <div class="experience__company">National Technical University «Kharkiv Polytechnic Institute»</div>
             </div>
-        </div>
-      </section>
-      <section>
-        <h3>Skills</h3>
-        <div>
-            Vite, Gulp, Webpack, Vue, Angular, React, HTML5, CSS3, JavaScript, Git, Bootstrap, jQuery, Bitrix, ModX, Wordpress, WebAsyst, Shopscript, Figma, Sketch, SQL, PHP, Smarty, Hugo.
-        </div>
-      </section>
-      <section>
-        <h3>Languages</h3>
-        <ul>
-            <li>English - intermediate</li>
-            <li>Ukrainian - Advanced</li>
-            <li>Russian - Fluent</li>
-        </ul>
-      </section>
+          </div>
+        </section>
+
+        <section>
+          <h3>Languages</h3>
+          <ul>
+              <li>English - Full professional proficiency</li>
+              <li>Ukrainian - Advanced</li>
+              <li>Russian - Fluent</li>
+          </ul>
+        </section>
+      </main>
     </div>
     <script src='js/script.js'></script>
     <script src="https://use.fontawesome.com/7055031d63.js"></script>
